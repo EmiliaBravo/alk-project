@@ -7,7 +7,7 @@ export function HotOnes() {
     
       return(
         <>
-        {images.filter((a) => (a.upvotes-a.downvotes)>5).map((img) => (<MemeComp key={img.imgID} src={img.src} title={img.title} upvotes={img.upvotes} downvotes={img.downvotes} imgID={img.imgID}/>))}
+        {images.filter((a) => (a.upvotes-a.downvotes)>5).map((img) => (<MemeComp key={img.imgID} src={img.src} title={img.title} upvotes={img.upvotes} downvotes={img.downvotes} imgID={img.imgID} tags={img.tags}/>))}
         </>
       )
 

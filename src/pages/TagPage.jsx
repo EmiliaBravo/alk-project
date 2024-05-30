@@ -9,7 +9,7 @@ export function TagPage() {
       return(
         <>
         <h2>#{currentTag}</h2>
-        {images.filter((a) => a.tags.includes(currentTag)).map((img) => (<MemeComp key={img.imgID} src={img.src} title={img.title} upvotes={img.upvotes} downvotes={img.downvotes} imgID={img.imgID}/>))}
+        {images.filter((a) => a.tags.includes(currentTag)).map((img) => (<MemeComp key={img.imgID} src={img.src} title={img.title} upvotes={img.upvotes} downvotes={img.downvotes} imgID={img.imgID} tags={img.tags}/>))}
         </>
       )
 

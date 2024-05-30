@@ -1,4 +1,5 @@
 import { useDispatch } from "react-redux"
+import { TagButton } from "./TagButton";
 
 export function MemeComp(props){
 
@@ -18,6 +19,7 @@ export function MemeComp(props){
             <p>Downvotes: {props.downvotes}</p>
             <button onClick={addUpvote}>Upvote</button>
             <button onClick={addDownvote}>Downvote</button>
+            <div>{props.tags.map((item) => <TagButton tagname={item} key={item}/>)}</div>
         </div>
     )
 }
