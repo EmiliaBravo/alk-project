@@ -1,0 +1,22 @@
+{
+    "images": [
+        {
+            "title":"XEuropean Cat",
+            "src":"cat1.jpg",
+            "upvotes":1,
+            "downvotes":3
+        },
+        {
+            "title":"Ginger Cat",
+            "src":"cat2.jpg",
+            "upvotes":30,
+            "downvotes":5
+        },
+        {
+            "title":"AAA Grumpy Cat",
+            "src":"cat3.webp",
+            "upvotes":105,
+            "downvotes":101
+        }
+    ]
+    }
