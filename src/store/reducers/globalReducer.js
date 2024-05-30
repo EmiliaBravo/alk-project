@@ -2,26 +2,31 @@ const initState = {
     images: [
         {
             "title":"XEuropean Cat",
-            "src":"cat1.jpg",
+            "src":"images/cat1.jpg",
             "upvotes":1,
             "downvotes":3,
+            "tags": ['cat','grey'],
             "imgID": 0
         },
         {
             "title":"Ginger Cat",
-            "src":"cat2.jpg",
+            "src":"images/cat2.jpg",
             "upvotes":30,
             "downvotes":5,
+            "tags": ['cat','redhead','ginger'],
             "imgID": 1
         },
         {
             "title":"AAA Grumpy Cat",
-            "src":"cat3.webp",
+            "src":"images/cat3.webp",
             "upvotes":105,
             "downvotes":101,
+            "tags": ['cat','angry'],
             "imgID": 2
         }
-    ]
+    ],
+    tags: ['cat','ginger','redhead','angry','grey'],
+    currentTag: ""
 };
 
 export const memeReducer = (state = initState, action) => {
@@ -35,6 +40,9 @@ export const memeReducer = (state = initState, action) => {
             return {...state, 
                 images: state.images.map(img => img.imgID === action.payload ? {...img, downvotes: img.downvotes + 1} : img)
             };
+        }
+        case "CHANGE_CURR_TAG": {
+            return {...state, currentTag: action.payload};
         }
         default:
             return state;
