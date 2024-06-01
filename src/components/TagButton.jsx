@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom";
+import { Button } from "@mui/material";
 
 export function TagButton({tagname}){
 
@@ -14,9 +15,7 @@ export function TagButton({tagname}){
     }
 
     return (
-        <div>
-            <button onClick={() => {changeCurrentTag(); goToTagPage()}}>#{tagname}</button>
-        </div>
+            <Button onClick={() => {changeCurrentTag(); goToTagPage()}} variant="outlined">#{tagname}</Button>
     )
 
 }

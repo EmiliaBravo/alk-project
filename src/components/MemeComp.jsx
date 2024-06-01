@@ -1,5 +1,7 @@
 import { useDispatch } from "react-redux"
 import { TagButton } from "./TagButton";
+import { ButtonGroup, Button } from "@mui/material";
+import { ThumbUp, ThumbDown} from "@mui/icons-material";
 
 export function MemeComp(props){
 
@@ -15,10 +17,10 @@ export function MemeComp(props){
         <div>
             <img src={props.src} alt={props.title} />
             <br></br>
-            <p>Upvotes: {props.upvotes}</p>
-            <p>Downvotes: {props.downvotes}</p>
-            <button onClick={addUpvote}>Upvote</button>
-            <button onClick={addDownvote}>Downvote</button>
+            <ButtonGroup variant="contained">
+            <Button onClick={addUpvote}><ThumbUp/>{props.upvotes}</Button>
+            <Button onClick={addDownvote}>{props.downvotes}<ThumbDown/></Button>
+            </ButtonGroup>
             <div>{props.tags.map((item) => <TagButton tagname={item} key={item}/>)}</div>
         </div>
     )
