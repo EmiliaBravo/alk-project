@@ -1,7 +1,8 @@
 import { useDispatch } from "react-redux"
 import { TagButton } from "./TagButton";
-import { ButtonGroup, Button } from "@mui/material";
+import { ButtonGroup, Button, Box, Divider } from "@mui/material";
 import { ThumbUp, ThumbDown} from "@mui/icons-material";
+
 
 export function MemeComp(props){
 
@@ -12,16 +13,33 @@ export function MemeComp(props){
     const addDownvote = () => {
         dispatch({type: 'ADD_DOWNVOTE', payload: props.imgID})
     };
+    const boxWidth = 800;
 
     return (
-        <div>
-            <img src={props.src} alt={props.title} />
-            <br></br>
+        <Box sx={{
+            width: boxWidth,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            my: 5 
+            }}>
+            <Box component='img' 
+                sx={{
+                width: boxWidth,
+                mx: 'auto',
+                // border: 0.5,
+                // borderColor: 'grey.300',
+                borderRadius: 3,
+                boxShadow: 2
+                }}
+                src={props.src}
+                alt={props.title} />
             <ButtonGroup variant="contained">
-            <Button onClick={addUpvote}><ThumbUp/>{props.upvotes}</Button>
+            <Button onClick={addUpvote} sx={{backgroundColor: 'secondary.main'}}><ThumbUp/>{props.upvotes}</Button>
             <Button onClick={addDownvote}>{props.downvotes}<ThumbDown/></Button>
             </ButtonGroup>
-            <div>{props.tags.map((item) => <TagButton tagname={item} key={item}/>)}</div>
-        </div>
+            <Divider />
+            <Box>{props.tags.map((item) => <TagButton tagname={item} key={item}/>)}</Box>
+        </Box>
     )
 }

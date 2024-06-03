@@ -6,7 +6,7 @@ export function TagList () {
 
     return (
         <>
-        {tags.map((item) => <TagButton tagname={item} key={item}/>)}
+        {tags.sort().map((item) => <TagButton tagname={item} key={item}/>)}
         </> 
     )
 

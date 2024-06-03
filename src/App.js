@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Routes, NavLink } from 'react-router-dom';
 import { useState } from 'react';
 // import './App.css';
 import { HomePage, HotOnes,TagList,TagPage } from './pages';
-import { Drawer, Box, ListItem, List, ListItemButton, ListItemText } from '@mui/material';
+import { Drawer, Box, ListItem, List, ListItemButton, ListItemText, CssBaseline } from '@mui/material';
 
 
 function App() {
@@ -18,8 +18,9 @@ function App() {
 
   return (
     <BrowserRouter>
+    <CssBaseline/>
     <Box sx={{display: 'flex'}}>
-    <Drawer sx={{width: 150, flexShrink: 0, '& .MuiDrawer-paper': {width: 150, boxSizing: 'border-box'}}} 
+    <Drawer sx={{width: 200, flexShrink: 0, '& .MuiDrawer-paper': {width: 200, boxSizing: 'border-box'}}} 
       variant='permanent' 
       anchor='left'>
     <List>
