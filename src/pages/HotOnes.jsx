@@ -10,17 +10,25 @@ export function HotOnes() {
         <Box sx={{
           width: '100vw',
           display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center'}}>
-        {images.filter((a) => (a.upvotes-a.downvotes)>5).map((img) => (
-          <MemeComp 
-          key={img.imgID}
-          src={img.src}
-          title={img.title}
-          upvotes={img.upvotes}
-          downvotes={img.downvotes}
-          imgID={img.imgID}
-          tags={img.tags}/>))}
+          alignItems: 'flex-start'
+          }}>
+            <Box sx={{
+            maxWidth: 900,
+            width: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center'
+          }}>
+          {images.filter((a) => (a.upvotes-a.downvotes)>5).map((img) => (
+            <MemeComp 
+            key={img.imgID}
+            src={img.src}
+            title={img.title}
+            upvotes={img.upvotes}
+            downvotes={img.downvotes}
+            imgID={img.imgID}
+            tags={img.tags}/>))}
+          </Box>
         </Box>
       )
 }

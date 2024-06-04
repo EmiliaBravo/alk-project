@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { MemeComp } from "../components/MemeComp";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 
 export function TagPage() {
@@ -11,18 +11,26 @@ export function TagPage() {
         <Box sx={{
           width: '100vw',
           display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center'}}>
-          <h2>#{currentTag}</h2>
-          {images.filter((a) => a.tags.includes(currentTag)).map((img) => (
-          <MemeComp 
-          key={img.imgID}
-          src={img.src}
-          title={img.title}
-          upvotes={img.upvotes}
-          downvotes={img.downvotes}
-          imgID={img.imgID}
-          tags={img.tags}/>))}
+          alignItems: 'flex-start'
+        }}>
+          <Box sx={{
+            maxWidth: 900,
+            width: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center'
+          }}>
+            <Typography variant="h3" sx={{marginTop: 4}}>#{currentTag}</Typography>
+            {images.filter((a) => a.tags.includes(currentTag)).map((img) => (
+            <MemeComp 
+            key={img.imgID}
+            src={img.src}
+            title={img.title}
+            upvotes={img.upvotes}
+            downvotes={img.downvotes}
+            imgID={img.imgID}
+            tags={img.tags}/>))}
+          </Box>
         </Box>
 
       )

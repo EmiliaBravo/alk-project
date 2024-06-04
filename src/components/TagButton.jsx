@@ -11,11 +11,12 @@ export function TagButton({tagname}){
 
     const navigate = useNavigate();
     const goToTagPage = () => {
-        navigate("/currenttag")
+        navigate("/currenttag");
+        window.scrollTo(0, 0)
     }
 
     return (
-            <Button onClick={() => {changeCurrentTag(); goToTagPage()}} variant="outlined">#{tagname}</Button>
+            <Button onClick={() => {changeCurrentTag(); goToTagPage()}} variant="outlined" sx={{margin: 0.5}}>#{tagname}</Button>
     )
 
 }

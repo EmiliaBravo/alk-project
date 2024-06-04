@@ -9,7 +9,8 @@ export function HomePage() {
       return(
         <Box sx={{
           width: '100vw',
-          alignItems: 'left'
+          display: 'flex',
+          alignItems: 'flex-start'
         }}>
           <Box sx={{
             maxWidth: 900,

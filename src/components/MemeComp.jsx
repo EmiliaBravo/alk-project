@@ -13,7 +13,7 @@ export function MemeComp(props){
     const addDownvote = () => {
         dispatch({type: 'ADD_DOWNVOTE', payload: props.imgID})
     };
-    const boxWidth = 800;
+    const boxWidth = 600;
 
     return (
         <Box sx={{
@@ -27,19 +27,18 @@ export function MemeComp(props){
                 sx={{
                 width: boxWidth,
                 mx: 'auto',
-                // border: 0.5,
-                // borderColor: 'grey.300',
-                borderRadius: 3,
-                boxShadow: 2
+                marginBottom: 0.3,
+                borderRadius: 1,
+                boxShadow: 1
                 }}
                 src={props.src}
                 alt={props.title} />
-            <ButtonGroup variant="contained">
-            <Button onClick={addUpvote} sx={{backgroundColor: 'secondary.main'}}><ThumbUp/>{props.upvotes}</Button>
-            <Button onClick={addDownvote}>{props.downvotes}<ThumbDown/></Button>
+            <ButtonGroup>
+            <Button onClick={addUpvote} variant="outlined" sx={{width: boxWidth/2, height:60, fontSize: 24}}><ThumbUp sx={{fontSize: 28, marginRight: 2}}/>{props.upvotes}</Button>
+            <Button onClick={addDownvote} variant="outlined" sx={{width: boxWidth/2, height:60, fontSize: 24}}>{props.downvotes}<ThumbDown sx={{fontSize: 28, marginLeft: 2}}/></Button>
             </ButtonGroup>
             <Divider />
-            <Box>{props.tags.map((item) => <TagButton tagname={item} key={item}/>)}</Box>
+            <Box>{props.tags.sort().map((item) => <TagButton tagname={item} key={item}/>)}</Box>
         </Box>
     )
 }

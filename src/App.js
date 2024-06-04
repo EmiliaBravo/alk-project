@@ -14,6 +14,7 @@ function App() {
 
   const handleListItemClick = (event, index) => {
     setSelectedIndex(index);
+    window.scrollTo(0, 0)
   };
 
   return (
