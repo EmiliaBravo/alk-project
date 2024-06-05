@@ -1,7 +1,7 @@
 const initState = {
     images: [
         {
-            "title":"",
+            "title":"Dying characters",
             "src":"images/book1.jpg",
             "upvotes":23,
             "downvotes":15,
@@ -9,7 +9,7 @@ const initState = {
             "imgID": 0
         },
         {
-            "title":"",
+            "title":"Buying too many books",
             "src":"images/books2.jpeg",
             "upvotes":12,
             "downvotes":50,
@@ -17,7 +17,7 @@ const initState = {
             "imgID": 1
         },
         {
-            "title":"",
+            "title":"Used bookstore",
             "src":"images/books3.jpg",
             "upvotes":65,
             "downvotes":32,
@@ -25,7 +25,7 @@ const initState = {
             "imgID": 2
         },
         {
-            "title":"",
+            "title":"Photogenic cat",
             "src":"images/cat.jpg",
             "upvotes":191,
             "downvotes":180,
@@ -33,7 +33,7 @@ const initState = {
             "imgID": 3
         },
         {
-            "title":"",
+            "title":"Big mouse",
             "src":"images/cat2.jpg",
             "upvotes":214,
             "downvotes":200,
@@ -41,7 +41,7 @@ const initState = {
             "imgID": 4
         },
         {
-            "title":"",
+            "title":"Neighbours house",
             "src":"images/cat3.jpg",
             "upvotes":123,
             "downvotes":121,
@@ -49,7 +49,7 @@ const initState = {
             "imgID": 5
         },
         {
-            "title":"",
+            "title":"Getting the pizza",
             "src":"images/cat4.jpg",
             "upvotes":32,
             "downvotes":58,
@@ -57,7 +57,7 @@ const initState = {
             "imgID": 6
         },
         {
-            "title":"",
+            "title":"Dad and the cat",
             "src":"images/cat5.jpg",
             "upvotes":12,
             "downvotes":5,
@@ -65,7 +65,7 @@ const initState = {
             "imgID": 7
         },
         {
-            "title":"",
+            "title":"Wellness check",
             "src":"images/cat6.jpg",
             "upvotes":21,
             "downvotes":20,
@@ -73,7 +73,7 @@ const initState = {
             "imgID": 8
         },
         {
-            "title":"",
+            "title":"Diuna w Opolu",
             "src":"images/Diuna_opole.jpg",
             "upvotes":54,
             "downvotes":57,
@@ -81,7 +81,7 @@ const initState = {
             "imgID": 9
         },
         {
-            "title":"",
+            "title":"Dogville the Sims edition",
             "src":"images/dogville.jpg",
             "upvotes":15,
             "downvotes":7,
@@ -89,7 +89,7 @@ const initState = {
             "imgID": 10
         },
         {
-            "title":"",
+            "title":"Gom Jabbar",
             "src":"images/dune2.jpeg",
             "upvotes":89,
             "downvotes":86,
@@ -97,7 +97,7 @@ const initState = {
             "imgID": 11
         },
         {
-            "title":"",
+            "title":"Lisan Al Gaib",
             "src":"images/dune3.jpeg",
             "upvotes":290,
             "downvotes":288,
@@ -105,15 +105,15 @@ const initState = {
             "imgID": 12
         },
         {
-            "title":"",
+            "title":"Filmoznawca na pokladzie",
             "src":"images/filmoznawca.jpg",
-            "upvotes":431,
-            "downvotes":425,
+            "upvotes":43,
+            "downvotes":56,
             "tags": ['movies','polish','cartoon'],
             "imgID": 13
         },
         {
-            "title":"",
+            "title":"Goodfellas Kicia Kocia",
             "src":"images/goodfellas.jpg",
             "upvotes":157,
             "downvotes":160,
@@ -121,7 +121,7 @@ const initState = {
             "imgID": 14
         },
         {
-            "title":"",
+            "title":"Cubic rule",
             "src":"images/hot_doh.jpg",
             "upvotes":67,
             "downvotes":60,
@@ -129,7 +129,7 @@ const initState = {
             "imgID": 15
         },
         {
-            "title":"",
+            "title":"Dark lord in a turban",
             "src":"images/hp.png",
             "upvotes":90,
             "downvotes":87,
@@ -137,7 +137,7 @@ const initState = {
             "imgID": 16
         },
         {
-            "title":"",
+            "title":"Hogwarts letters",
             "src":"images/hp2.png",
             "upvotes":100,
             "downvotes":97,
@@ -145,7 +145,7 @@ const initState = {
             "imgID": 17
         },
         {
-            "title":"",
+            "title":"Harry Potter actors",
             "src":"images/hp3.png",
             "upvotes":301,
             "downvotes":299,
@@ -153,7 +153,7 @@ const initState = {
             "imgID": 18
         },
         {
-            "title":"",
+            "title":"Order of the Phoenix",
             "src":"images/hp4.jpg",
             "upvotes":171,
             "downvotes":184,
@@ -161,7 +161,7 @@ const initState = {
             "imgID": 19
         },
         {
-            "title":"",
+            "title":"HP crew",
             "src":"images/hp5.png",
             "upvotes":79,
             "downvotes":63,
@@ -169,7 +169,7 @@ const initState = {
             "imgID": 20
         },
         {
-            "title":"",
+            "title":"Slytherin monster",
             "src":"images/hp6.png",
             "upvotes":287,
             "downvotes":280,
@@ -177,7 +177,7 @@ const initState = {
             "imgID": 21
         },
         {
-            "title":"",
+            "title":"Checkout emergency",
             "src":"images/lotr1.png",
             "upvotes":49,
             "downvotes":57,
@@ -185,7 +185,7 @@ const initState = {
             "imgID": 22
         },
         {
-            "title":"",
+            "title":"End of the line",
             "src":"images/lotr2.png",
             "upvotes":189,
             "downvotes":179,
@@ -193,7 +193,7 @@ const initState = {
             "imgID": 23
         },
         {
-            "title":"",
+            "title":"Halflings in the car",
             "src":"images/lotr3.png",
             "upvotes":35,
             "downvotes":12,
@@ -201,7 +201,7 @@ const initState = {
             "imgID": 24
         },
         {
-            "title":"",
+            "title":"Les Parapluies de Cherbourg",
             "src":"images/musical.jpg",
             "upvotes":67,
             "downvotes":54,
@@ -209,7 +209,7 @@ const initState = {
             "imgID": 25
         },
         {
-            "title":"",
+            "title":"Imax Oppenheimer roll",
             "src":"images/oppenheimer.jpg",
             "upvotes":79,
             "downvotes":75,

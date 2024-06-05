@@ -14,13 +14,13 @@ export function TagPage() {
           alignItems: 'flex-start'
         }}>
           <Box sx={{
-            maxWidth: 900,
+            maxWidth: 1000,
             width: '100%',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center'
           }}>
-            <Typography variant="h3" sx={{marginTop: 4}}>#{currentTag}</Typography>
+            <Typography variant="h3" sx={{marginTop: 4, color:'primary.main', fontSize: 40}}>#{currentTag.toUpperCase()}</Typography>
             {images.filter((a) => a.tags.includes(currentTag)).map((img) => (
             <MemeComp 
             key={img.imgID}

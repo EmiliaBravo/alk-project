@@ -13,7 +13,7 @@ export function HomePage() {
           alignItems: 'flex-start'
         }}>
           <Box sx={{
-            maxWidth: 900,
+            maxWidth: 1000,
             width: '100%',
             display: 'flex',
             flexDirection: 'column',

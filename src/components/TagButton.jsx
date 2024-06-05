@@ -16,7 +16,7 @@ export function TagButton({tagname}){
     }
 
     return (
-            <Button onClick={() => {changeCurrentTag(); goToTagPage()}} variant="outlined" sx={{margin: 0.5}}>#{tagname}</Button>
+            <Button onClick={() => {changeCurrentTag(); goToTagPage()}} variant="outlined" sx={{margin: 0.5, boxShadow: 1}}>#{tagname}</Button>
     )
 
 }

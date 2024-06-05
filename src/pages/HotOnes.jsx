@@ -12,8 +12,8 @@ export function HotOnes() {
           display: 'flex',
           alignItems: 'flex-start'
           }}>
-            <Box sx={{
-            maxWidth: 900,
+          <Box sx={{
+            maxWidth: 1000,
             width: '100%',
             display: 'flex',
             flexDirection: 'column',

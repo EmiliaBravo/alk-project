@@ -12,14 +12,14 @@ export function TagList () {
             alignItems: 'flex-start',
         }}>
             <Box sx={{
-                maxWidth: 900,
+                maxWidth: 1000,
                 width: '100%',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                marginTop: 5
+                marginTop: 6
             }}>
-                <Typography variant="h3" sx={{marginBottom: 3}}>Select a tag:</Typography>
+                <Typography variant="h3" sx={{marginBottom: 3, color:'primary.main', fontSize: 40}}>SELECT A TAG:</Typography>
                 <Box sx={{
                     display: 'flex',
                     flexWrap: 'wrap',
