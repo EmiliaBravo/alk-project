@@ -4,7 +4,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import { BrowserRouter, Route, Routes, NavLink } from 'react-router-dom';
 import { useState } from 'react';
-import { HomePage, HotOnes,TagList,TagPage } from './pages';
+import { HomePage, HotOnes,TagList,TagPage, AddNewMeme } from './pages';
 import { Drawer, Box, ListItem, List, ListItemButton, ListItemText, CssBaseline, Typography } from '@mui/material';
 import Lottie from 'lottie-react';
 import catAnimation from '../src/lotties/catrocket.json'
@@ -49,6 +49,13 @@ function App() {
                   <ListItemText primary="TAGS" sx={{color:'primary.main'}}/>
               </ListItemButton>
           </ListItem>
+          <ListItem>
+              <ListItemButton component={NavLink} value="/addnew" to={"/addnew"}
+              selected={selectedIndex === 3}
+              onClick={(event) => handleListItemClick(event, 3)}>
+                  <ListItemText primary="ADD NEW MEME" sx={{color:'primary.main'}}/>
+              </ListItemButton>
+          </ListItem>
           </List>
         </Box>
         <Typography variant='caption' sx={{color:'primary.main'}}>Copyright&copy; by Emilia Bravo</Typography>
@@ -58,6 +65,7 @@ function App() {
         <Route path="/hot" element={<HotOnes/>}></Route>
         <Route path="/tags" element={<TagList/>}></Route>
         <Route path="/currenttag" element={<TagPage/>}></Route>
+        <Route path="/addnew" element={<AddNewMeme/>}></Route>
       </Routes>
     </Box>
     </BrowserRouter>

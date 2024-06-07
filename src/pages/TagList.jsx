@@ -3,7 +3,7 @@ import { TagButton } from "../components/TagButton";
 import { Box, Typography } from "@mui/material";
 
 export function TagList () {
-    const tags = useSelector(state => state.tags);
+    const tagsArray = useSelector(state => state.tagsArray);
 
     return (
         <Box sx={{
@@ -25,7 +25,7 @@ export function TagList () {
                     flexWrap: 'wrap',
                     width: 700,
                 }}>
-                {tags.sort().map((item) => <TagButton tagname={item} key={item}/>)}
+                {tagsArray.sort().map((item) => <TagButton tagname={item} key={item}/>)}
                 </Box>
             </Box>
         </Box> 

@@ -149,7 +149,7 @@ const initState = {
             "src":"images/hp3.png",
             "upvotes":301,
             "downvotes":299,
-            "tags": ['books','hp','harry potter','movies','movies'],
+            "tags": ['books','hp','harry potter','movies'],
             "imgID": 18
         },
         {
@@ -279,9 +279,17 @@ const initState = {
             "downvotes":32,
             "tags": ['great british bake off','gbbo'],
             "imgID": 34
+        },
+        {
+            "title":"Heidi N. Closet",
+            "src":"https://i.pinimg.com/originals/cb/cb/20/cbcb20a92a1e8fa72676915c3f953944.jpg",
+            "upvotes":40,
+            "downvotes":32,
+            "tags": ['rpdr','rupauls drag race'],
+            "imgID": 35
         }
     ],
-    tags: ['art','books','lotr','movies','food','european movies', 'hp','harry potter','musical','cats','philosophy','polish','dune','cute','animals','cartoon','family','marriage','Gordon Ramsay','italian','dogs','great british bake off','gbbo'],
+    tagsArray: ['art','books','lotr','movies','food','european movies', 'hp','harry potter','musical','cats','philosophy','polish','dune','cute','animals','cartoon','family','marriage','gordon ramsay','italian','dogs','great british bake off','gbbo','rpdr','rupauls drag race'],
     currentTag: ""
 };
 
@@ -299,6 +307,23 @@ export const memeReducer = (state = initState, action) => {
         }
         case "CHANGE_CURR_TAG": {
             return {...state, currentTag: action.payload};
+        }
+        case "SUBMIT_MEME": {
+            const newID = Math.max(...state.images.map((a) => a.imgID)) + 1;
+            const tagsSliced = action.payload.tags.slice(0,5);
+            const tagsForTags = tagsSliced.filter((i) => !state.tagsArray.includes(i))
+            const newMeme = {
+                "title": action.payload.title,
+                "src": action.payload.src,
+                "upvotes":1999,
+                "downvotes":0,
+                "tags": tagsSliced,
+                "imgID": newID
+            };
+            console.log(newMeme);
+            console.log(tagsForTags)
+            console.log(newID);
+            return {...state, images: [...state.images, newMeme], tagsArray: [...state.tagsArray, ...tagsForTags]};
         }
         default:
             return state;
