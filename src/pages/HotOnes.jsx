@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import { MemeComp } from "../components/MemeComp";
 import { Box } from "@mui/material";
+import { PageBase } from "../components/PageBase";
 
 
 export function HotOnes() {
@@ -12,13 +13,7 @@ export function HotOnes() {
           display: 'flex',
           alignItems: 'flex-start'
           }}>
-          <Box sx={{
-            maxWidth: 1000,
-            width: '100%',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center'
-          }}>
+          <PageBase>
           {images.filter((a) => (a.upvotes-a.downvotes)>5).map((img) => (
             <MemeComp 
             key={img.imgID}
@@ -27,8 +22,10 @@ export function HotOnes() {
             upvotes={img.upvotes}
             downvotes={img.downvotes}
             imgID={img.imgID}
-            tags={img.tags}/>))}
-          </Box>
+            tags={img.tags}
+            favourite={img.favourite}
+            />))}
+          </PageBase>
         </Box>
       )
 }

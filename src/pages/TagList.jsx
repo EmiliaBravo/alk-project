@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import { TagButton } from "../components/TagButton";
 import { Box, Typography } from "@mui/material";
+import { PageBase } from "../components/PageBase";
 
 export function TagList () {
     const tagsArray = useSelector(state => state.tagsArray);
@@ -11,15 +12,8 @@ export function TagList () {
             display: 'flex',
             alignItems: 'flex-start',
         }}>
-            <Box sx={{
-                maxWidth: 1000,
-                width: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                marginTop: 6
-            }}>
-                <Typography variant="h3" sx={{marginBottom: 3, color:'primary.main', fontSize: 40}}>SELECT A TAG:</Typography>
+            <PageBase marginTop={6}>
+                <Typography variant="h3" sx={{marginBottom: 3, color:'primary.main', fontSize: 34}}>SELECT A TAG:</Typography>
                 <Box sx={{
                     display: 'flex',
                     flexWrap: 'wrap',
@@ -27,7 +21,7 @@ export function TagList () {
                 }}>
                 {tagsArray.sort().map((item) => <TagButton tagname={item} key={item}/>)}
                 </Box>
-            </Box>
+            </PageBase>
         </Box> 
     )
 

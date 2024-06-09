@@ -6,7 +6,9 @@ const initState = {
             "upvotes":23,
             "downvotes":15,
             "tags": ['books','cartoon'],
-            "imgID": 0
+            "imgID": 0,
+            "importDate": 'Sat Jun 08 2024 16:42:35 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Buying too many books",
@@ -14,7 +16,9 @@ const initState = {
             "upvotes":12,
             "downvotes":50,
             "tags": ['books'],
-            "imgID": 1
+            "imgID": 1,
+            "importDate": 'Sat Jun 08 2024 16:43:21 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Used bookstore",
@@ -22,7 +26,9 @@ const initState = {
             "upvotes":65,
             "downvotes":32,
             "tags": ['books','lotr'],
-            "imgID": 2
+            "imgID": 2,
+            "importDate": 'Sat Jun 08 2024 16:51:47 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Photogenic cat",
@@ -30,7 +36,9 @@ const initState = {
             "upvotes":191,
             "downvotes":180,
             "tags": ['cats','cute'],
-            "imgID": 3
+            "imgID": 3,
+            "importDate": 'Sat Jun 08 2024 16:43:21 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Big mouse",
@@ -38,7 +46,9 @@ const initState = {
             "upvotes":214,
             "downvotes":200,
             "tags": ['cats','cute','animals'],
-            "imgID": 4
+            "imgID": 4,
+            "importDate": 'Sat Jun 08 2024 16:50:47 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Neighbours house",
@@ -46,7 +56,9 @@ const initState = {
             "upvotes":123,
             "downvotes":121,
             "tags": ['cats'],
-            "imgID": 5
+            "imgID": 5,
+            "importDate": 'Sat Jun 08 2024 16:42:35 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Getting the pizza",
@@ -54,7 +66,9 @@ const initState = {
             "upvotes":32,
             "downvotes":58,
             "tags": ['cats','art'],
-            "imgID": 6
+            "imgID": 6,
+            "importDate": 'Sat Jun 08 2024 16:51:47 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Dad and the cat",
@@ -62,7 +76,9 @@ const initState = {
             "upvotes":12,
             "downvotes":5,
             "tags": ['cats','family'],
-            "imgID": 7
+            "imgID": 7,
+            "importDate": 'Sat Jun 08 2024 16:42:35 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Wellness check",
@@ -70,7 +86,9 @@ const initState = {
             "upvotes":21,
             "downvotes":20,
             "tags": ['cats','cartoon'],
-            "imgID": 8
+            "imgID": 8,
+            "importDate": 'Sat Jun 08 2024 16:53:47 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Diuna w Opolu",
@@ -78,7 +96,9 @@ const initState = {
             "upvotes":54,
             "downvotes":57,
             "tags": ['polish','dune','movies'],
-            "imgID": 9
+            "imgID": 9,
+            "importDate": 'Sat Jun 08 2024 16:42:35 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Dogville the Sims edition",
@@ -86,7 +106,9 @@ const initState = {
             "upvotes":15,
             "downvotes":7,
             "tags": ['movies'],
-            "imgID": 10
+            "imgID": 10,
+            "importDate": 'Sat Jun 08 2024 16:33:21 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Gom Jabbar",
@@ -94,7 +116,9 @@ const initState = {
             "upvotes":89,
             "downvotes":86,
             "tags": ['dune'],
-            "imgID": 11
+            "imgID": 11,
+            "importDate": 'Sat Jun 08 2024 16:51:47 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Lisan Al Gaib",
@@ -102,7 +126,9 @@ const initState = {
             "upvotes":290,
             "downvotes":288,
             "tags": ['dune'],
-            "imgID": 12
+            "imgID": 12,
+            "importDate": 'Sat Jun 08 2024 16:42:35 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Filmoznawca na pokladzie",
@@ -110,7 +136,9 @@ const initState = {
             "upvotes":43,
             "downvotes":56,
             "tags": ['movies','polish','cartoon'],
-            "imgID": 13
+            "imgID": 13,
+            "importDate": 'Sat Jun 08 2024 16:41:47 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Goodfellas Kicia Kocia",
@@ -118,7 +146,9 @@ const initState = {
             "upvotes":157,
             "downvotes":160,
             "tags": ['movies'],
-            "imgID": 14
+            "imgID": 14,
+            "importDate": 'Sat Jun 08 2024 16:35:47 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Cubic rule",
@@ -126,7 +156,9 @@ const initState = {
             "upvotes":67,
             "downvotes":60,
             "tags": ['food','philosophy'],
-            "imgID": 15
+            "imgID": 15,
+            "importDate": 'Sat Jun 08 2024 16:43:21 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Dark lord in a turban",
@@ -134,7 +166,9 @@ const initState = {
             "upvotes":90,
             "downvotes":87,
             "tags": ['books','hp','harry potter','movies'],
-            "imgID": 16
+            "imgID": 16,
+            "importDate": 'Sat Jun 08 2024 16:42:35 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Hogwarts letters",
@@ -142,7 +176,9 @@ const initState = {
             "upvotes":100,
             "downvotes":97,
             "tags": ['books','hp','harry potter','movies'],
-            "imgID": 17
+            "imgID": 17,
+            "importDate": 'Sat Jun 08 2024 16:51:47 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Harry Potter actors",
@@ -150,7 +186,9 @@ const initState = {
             "upvotes":301,
             "downvotes":299,
             "tags": ['books','hp','harry potter','movies'],
-            "imgID": 18
+            "imgID": 18,
+            "importDate": 'Sat Jun 08 2024 16:45:47 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Order of the Phoenix",
@@ -158,7 +196,9 @@ const initState = {
             "upvotes":171,
             "downvotes":184,
             "tags": ['books','hp','harry potter','food','movies'],
-            "imgID": 19
+            "imgID": 19,
+            "importDate": 'Sat Jun 08 2024 16:43:21 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"HP crew",
@@ -166,7 +206,9 @@ const initState = {
             "upvotes":79,
             "downvotes":63,
             "tags": ['books','hp','harry potter','family','movies'],
-            "imgID": 20
+            "imgID": 20,
+            "importDate": 'Sat Jun 08 2024 16:48:47 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Slytherin monster",
@@ -174,7 +216,9 @@ const initState = {
             "upvotes":287,
             "downvotes":280,
             "tags": ['books','hp','harry potter'],
-            "imgID": 21
+            "imgID": 21,
+            "importDate": 'Sat Jun 08 2024 16:51:47 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Checkout emergency",
@@ -182,7 +226,9 @@ const initState = {
             "upvotes":49,
             "downvotes":57,
             "tags": ['books','lotr','movies','family'],
-            "imgID": 22
+            "imgID": 22,
+            "importDate": 'Sat Jun 08 2024 16:43:21 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"End of the line",
@@ -190,7 +236,9 @@ const initState = {
             "upvotes":189,
             "downvotes":179,
             "tags": ['books','lotr','movies','family'],
-            "imgID": 23
+            "imgID": 23,
+            "importDate": 'Sat Jun 08 2024 16:51:47 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Halflings in the car",
@@ -198,7 +246,9 @@ const initState = {
             "upvotes":35,
             "downvotes":12,
             "tags": ['books','lotr','movies','marriage'],
-            "imgID": 24
+            "imgID": 24,
+            "importDate": 'Sat Jun 08 2024 16:52:47 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Les Parapluies de Cherbourg",
@@ -206,7 +256,9 @@ const initState = {
             "upvotes":67,
             "downvotes":54,
             "tags": ['movies', 'musical','polish'],
-            "imgID": 25
+            "imgID": 25,
+            "importDate": 'Sat Jun 08 2024 16:34:47 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Imax Oppenheimer roll",
@@ -214,7 +266,9 @@ const initState = {
             "upvotes":79,
             "downvotes":75,
             "tags": ['movies'],
-            "imgID": 26
+            "imgID": 26,
+            "importDate": 'Sat Jun 08 2024 16:43:21 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Radzieccy Rezyserzy be like",
@@ -222,7 +276,9 @@ const initState = {
             "upvotes":54,
             "downvotes":56,
             "tags": ['movies', 'european movies','polish'],
-            "imgID": 27
+            "imgID": 27,
+            "importDate": 'Sat Jun 08 2024 16:42:35 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Shrinking Man",
@@ -230,7 +286,9 @@ const initState = {
             "upvotes":12,
             "downvotes":11,
             "tags": ['movies','polish'],
-            "imgID": 28
+            "imgID": 28,
+            "importDate": 'Sat Jun 08 2024 16:33:47 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Idiot Sandwich",
@@ -238,7 +296,9 @@ const initState = {
             "upvotes":45,
             "downvotes":39,
             "tags": ['food','Gordon Ramsay'],
-            "imgID": 29
+            "imgID": 29,
+            "importDate": 'Sat Jun 08 2024 16:43:21 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Spaghetti Police",
@@ -246,7 +306,9 @@ const initState = {
             "upvotes":76,
             "downvotes":75,
             "tags": ['food','italian','cartoon'],
-            "imgID": 30
+            "imgID": 30,
+            "importDate": 'Sat Jun 08 2024 16:51:47 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Stary i pies",
@@ -254,7 +316,9 @@ const initState = {
             "upvotes":29,
             "downvotes":1,
             "tags": ['dogs','animals','family','polish'],
-            "imgID": 31
+            "imgID": 31,
+            "importDate": 'Sat Jun 08 2024 16:43:21 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Healthy diet",
@@ -262,7 +326,9 @@ const initState = {
             "upvotes":47,
             "downvotes":32,
             "tags": ['food','great british bake off','gbbo'],
-            "imgID": 32
+            "imgID": 32,
+            "importDate": 'Sat Jun 08 2024 16:42:35 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Hard day",
@@ -270,7 +336,9 @@ const initState = {
             "upvotes":65,
             "downvotes":12,
             "tags": ['great british bake off','gbbo'],
-            "imgID": 33
+            "imgID": 33,
+            "importDate": 'Sat Jun 08 2024 16:51:47 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Acaster breakdown",
@@ -278,7 +346,9 @@ const initState = {
             "upvotes":43,
             "downvotes":32,
             "tags": ['great british bake off','gbbo'],
-            "imgID": 34
+            "imgID": 34,
+            "importDate": 'Sat Jun 08 2024 16:43:47 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         },
         {
             "title":"Heidi N. Closet",
@@ -286,11 +356,14 @@ const initState = {
             "upvotes":40,
             "downvotes":32,
             "tags": ['rpdr','rupauls drag race'],
-            "imgID": 35
+            "imgID": 35,
+            "importDate": 'Sat Jun 08 2024 16:51:47 GMT+0200 (czas środkowoeuropejski letni)',
+            "favourite": "false"
         }
     ],
     tagsArray: ['art','books','lotr','movies','food','european movies', 'hp','harry potter','musical','cats','philosophy','polish','dune','cute','animals','cartoon','family','marriage','gordon ramsay','italian','dogs','great british bake off','gbbo','rpdr','rupauls drag race'],
-    currentTag: ""
+    currentTag: "",
+    selectedIndex: 0,
 };
 
 export const memeReducer = (state = initState, action) => {
@@ -305,8 +378,16 @@ export const memeReducer = (state = initState, action) => {
                 images: state.images.map(img => img.imgID === action.payload ? {...img, downvotes: img.downvotes + 1} : img)
             };
         }
+        case "CHANGE_FAVOURITE_STATUS": {
+            return {...state, 
+                images: state.images.map(img => img.imgID === action.payload ? img.favourite === 'true' ? {...img, favourite: 'false' } : {...img, favourite: 'true' } : img)
+            };
+        }
         case "CHANGE_CURR_TAG": {
             return {...state, currentTag: action.payload};
+        }
+        case "CHANGE_SELECTED_TAB": {
+            return {...state, selectedIndex: action.payload}
         }
         case "SUBMIT_MEME": {
             const newID = Math.max(...state.images.map((a) => a.imgID)) + 1;
@@ -315,15 +396,14 @@ export const memeReducer = (state = initState, action) => {
             const newMeme = {
                 "title": action.payload.title,
                 "src": action.payload.src,
-                "upvotes":1999,
+                "upvotes":0,
                 "downvotes":0,
                 "tags": tagsSliced,
-                "imgID": newID
+                "imgID": newID,
+                "importDate": new Date().toString(),
+                "favourite": 'false'
             };
-            console.log(newMeme);
-            console.log(tagsForTags)
-            console.log(newID);
-            return {...state, images: [...state.images, newMeme], tagsArray: [...state.tagsArray, ...tagsForTags]};
+            return {...state, images: [...state.images, newMeme], tagsArray: [...state.tagsArray, ...tagsForTags], selectedIndex: 0};
         }
         default:
             return state;

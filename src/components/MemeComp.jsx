@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux"
 import { TagButton } from "./TagButton";
-import { ButtonGroup, Button, Box } from "@mui/material";
-import { ThumbUp, ThumbDown} from "@mui/icons-material";
+import { ButtonGroup, Button, Box, IconButton } from "@mui/material";
+import { ThumbUp, ThumbDown, StarBorderRounded, StarRateRounded} from "@mui/icons-material";
 
 
 export function MemeComp(props){
@@ -13,15 +13,19 @@ export function MemeComp(props){
     const addDownvote = () => {
         dispatch({type: 'ADD_DOWNVOTE', payload: props.imgID})
     };
+
+    const changeFavouriteStatus = () => {
+        dispatch({type: 'CHANGE_FAVOURITE_STATUS', payload: props.imgID})
+    }
     const boxWidth = 560;
 
     return (
+    <Box sx={{width: boxWidth + 35, display: 'flex', flexDirection: 'row', my: 5 }}>
         <Box sx={{
             width: boxWidth,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            my: 5 
             }}>
             <Box component='img' 
                 sx={{
@@ -61,5 +65,9 @@ export function MemeComp(props){
             </ButtonGroup>
             <Box>{props.tags.sort().map((item) => <TagButton tagname={item} key={item}/>)}</Box>
         </Box>
+        <IconButton onClick={changeFavouriteStatus} sx={{height: 35, padding: 0, borderRadius: 1, color: "#ffca28"}} >
+            { props.favourite === 'true' ? <StarRateRounded fontSize="large"/>: <StarBorderRounded fontSize="large"/> }
+        </IconButton>
+    </Box>
     )
 }
