@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Meme Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created as part of Frontend Development course I took, in order to further develop and showcase my programming skills. It is a simple meme viewing page with a few additional functionalities described below. It was build using React, Redux & Material UI.
 
-## Available Scripts
+## Table of Contents
+*[General Info](#general-info)
+*[Features](#features)
+*[Technologies](#technologies)
+*[Setup](#setup)
+*[Author](#author)
 
-In the project directory, you can run:
+## General Info
+### Pages
+* Hompage - shows all memes according to import date in descending order (newest first)
+* Hot - shows most popular memes
+* Favourites - if any memes were marked as favourites using the gold star, they will show up here
+* Tags - list of all tags used to describe memes on the page
+* Tag page - you can access the list of memes with a particular tag by either choosing one on Tags page, or clicking on a tag placed directly below a meme
+* Add New Meme - you can add new meme by providing a URL, title and up to 5 tags 
 
-### `npm start`
+## Features
+* Vote for memes using thumbs up and thumbs down buttons
+* Add memes to favourites
+* View memes with a particular tag
+* Add new memes to the database
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies
+* React 18.3.1
+* React Redux 9.1.2
+* React Router 6.23.1
+* Material UI 5.15.19
+* Lottie 2.4.0
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup
+Clone this repository. You will need `node` and `npm` installed globally on your machine.
+Run `npm install` to install all the dependencies.
+To start the app run `npm start` and visit `localhost:3000`.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+This project was created by Emilia Bravo.

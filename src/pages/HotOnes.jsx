@@ -14,7 +14,7 @@ export function HotOnes() {
           alignItems: 'flex-start'
           }}>
           <PageBase>
-          {images.filter((a) => (a.upvotes-a.downvotes)>5).map((img) => (
+          {images.filter((a) => (a.upvotes-a.downvotes)>5).sort((a,b) => b.upvotes - a.upvotes).map((img) => (
             <MemeComp 
             key={img.imgID}
             src={img.src}
