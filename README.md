@@ -3,11 +3,11 @@
 This project was created as part of Frontend Development course I took, in order to further develop and showcase my programming skills. It is a simple meme viewing page with a few additional functionalities described below. It was build using React, Redux & Material UI.
 
 ## Table of Contents
-*[General Info](#general-info)
-*[Features](#features)
-*[Technologies](#technologies)
-*[Setup](#setup)
-*[Author](#author)
+* [General Info](#general-info)
+* [Features](#features)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Author](#author)
 
 ## General Info
 ### Pages
