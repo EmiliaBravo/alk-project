@@ -1,6 +1,5 @@
 import { useSelector } from "react-redux";
 import { MemeComp } from "../components/MemeComp";
-import { Box } from "@mui/material";
 import { PageBase } from "../components/PageBase";
 
 export function MemePage(props) {
@@ -27,28 +26,20 @@ export function MemePage(props) {
   const sortedImages = pageFunction(images);
 
   return (
-    <Box
-      sx={{
-        width: "100vw",
-        display: "flex",
-        alignItems: "flex-start",
-      }}
-    >
-      <PageBase>
-        {sortedImages.map((img) => (
-          <MemeComp
-            key={img.imgID}
-            src={img.src}
-            title={img.title}
-            upvotes={img.upvotes}
-            downvotes={img.downvotes}
-            imgID={img.imgID}
-            tags={img.tags}
-            date={img.importDate}
-            favourite={img.favourite}
-          />
-        ))}
-      </PageBase>
-    </Box>
+    <PageBase>
+      {sortedImages.map((img) => (
+        <MemeComp
+          key={img.imgID}
+          src={img.src}
+          title={img.title}
+          upvotes={img.upvotes}
+          downvotes={img.downvotes}
+          imgID={img.imgID}
+          tags={img.tags}
+          date={img.importDate}
+          favourite={img.favourite}
+        />
+      ))}
+    </PageBase>
   );
 }
