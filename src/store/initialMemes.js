@@ -89,7 +89,7 @@ export const initialMemes = [
   },
   {
     title: "Wellness check",
-    src: "images/cat6.jpg",
+    src: "./images/cat6.jpg",
     upvotes: 21,
     downvotes: 20,
     tags: ["cats", "cartoon"],
@@ -232,7 +232,7 @@ export const initialMemes = [
   },
   {
     title: "Slytherin monster",
-    src: "images/hp6.png",
+    src: "./images/hp6.png",
     upvotes: 287,
     downvotes: 280,
     tags: ["books", "hp", "harry potter"],
